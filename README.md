@@ -13,7 +13,7 @@ Voir trousse officiel de développement du design système du gouverment avec Sv
 Tout d'abord, clonez le dépôt depuis GitHub sur votre machine locale :
 
 ```bash
-git clone https://github.com/bourpie/designsystem
+git clone https://github.com/klarence/designsystem
 ```
 
 ### Installer les dépendances
@@ -44,11 +44,12 @@ Pour construire la solution pour la production, utilisez la commande suivante :
 ```bash
 npm run build
 ```
+
 Cette commande créera un dossier `dist` à la racine du projet. À l'intérieur, vous trouverez les fichiers JavaScript, les styles CSS, et les images optimisées prêtes à être intégrées dans votre projet.
 
 ### Démarrer l'environnement de développement (optionnel)
 
-L'environnement de développement ([vite.js](https://vitejs.dev/)) permet de faire des tests d'intégration sur une page Web standard.Voir le fichier `index.html` (utilise le javascript et le css non compilés), et le fichier `exemple.html` (utilise le javascript et le css compilés du dossier `dist`) 
+L'environnement de développement ([vite.js](https://vitejs.dev/)) permet de faire des tests d'intégration sur une page Web standard.Voir le fichier `index.html` (utilise le javascript et le css non compilés), et le fichier `exemple.html` (utilise le javascript et le css compilés du dossier `dist`)
 
 Pour démarrer l'environnement de développement, utilisez la commande suivante :
 
@@ -56,11 +57,10 @@ Pour démarrer l'environnement de développement, utilisez la commande suivante 
 npm run dev
 ```
 
-
 ## Licence
 
 Ce projet est sous [licence MIT](https://opensource.org/license/MIT).
 
 ## Auteur
 
-[@bourpie](https://github.com/bourpie)
+[@klarence](https://github.com/klarence)
