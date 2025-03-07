@@ -1,7 +1,7 @@
 <!doctype html>
-<html lang="fr-CA">
+<html lang="en">
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -9,58 +9,58 @@
     <link rel="stylesheet" href="styles/style.css">
     <title>Vite App</title>
   </head>
-  <body>
+  <body lang="en-US">
 
-    <qc-header 
-      titre="JuridiQC" 
-      contacturl="https://design.quebec.ca/design/modeles/bandeau-en-tete-piv" 
+    <sl-header
+      title="Design System"
+      contacturl=""
       langueurl="#" 
-      languelabel="English">
-    </qc-header>
-    <qc-navigation>
+      languagelabel="English">
+    </sl-header>
+    <sl-navigation>
       <ul>
         <li>
-          <a href="#">À propos</a>
+          <a href="#">About</a>
         </li>
         <li>
-          <a href="#">Contenu</a>
+          <a href="#">Content</a>
         </li>
         <li>
           <a href="#">Design</a>
         </li>
         <li>
-          <a href="#">Ressources</a>
+          <a href="#">Resources</a>
           <button>
             <span class="lnr lnr-chevron-down"></span>
           </button>
           <ul>
             <li><a href="#">Articles</a></li>
-            <li><a href="#">Vidéos</a></li>
+            <li><a href="#">Videos</a></li>
           </ul>
         </li>
       </ul>
       <div>
-        <qc-bouton type="session" label="Connexion"></qc-bouton>
+        <sl-button variant="neutral"> Connection</sl-button>
       </div>
-    </qc-navigation>
+    </sl-navigation>
 
     <main>
       <div class="container">
         <div class="row">
           <div class="col-9">
-            <h1 class="themeTitre mb-4 mt-0">
-              Titre de la page
+            <h1 class="themeTitle mb-4 mt-0">
+              Page Title
             </h1>
           </div>
         </div>
       </div>
     </main>
 
-    <qc-footer 
-      site-url="https://www.quebec.ca"
-      site-nom="Gouvernement du Québec"
+    <sl-footer
+      site-url="https://koydesigns.net"
+      site-name="KOYdesigns"
   >
-    <div slot="liens-principaux">
+    <div slot="main-links">
       <nav>
         <h3>Section 1</h3>
         <ul>
@@ -82,27 +82,20 @@
           <li><a href="#link2">Link 2</a></li>
         </ul>
       </nav>
-      <qc-social
-        titre="Suivez-nous"
-        theme="dark"
-        medias='[{"icon":"/assets/icons/facebook-dark.svg","url":"https://facebook.com","text":"Facebook"},{"icon":"/assets/icons/twitterX-dark.svg","url":"https://twitter.com","text":"Twitter"},{"icon":"/assets/icons/youtube-dark.svg","url":"https://linkedin.com","text":"LinkedIn"}]'
-      >
-      </qc-social>
     </div>
-    <div slot="liens-secondaires">
-      <ul>
-        <li><a href="/accessibilite">Accessibilité</a></li>
-        <li><a href="/plan-du-site">Plan du site</a></li>
-        <li><a href="/acces-information">Accès à l'information</a></li>
-        <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
-        <li><a href="/conditions-utilisation">Conditions d'utilisation</a></li>
-        <li><a href="/a-propos">À propos</a></li>
-      </ul>
-    </div>
+      <div slot="secondary-links">
+        <ul>
+          <li><a href="/accessibility">Accessibility</a></li>
+          <li><a href="/sitemap">Sitemap</a></li>
+          <li><a href="/privacy-policy">Privacy Policy</a></li>
+          <li><a href="/conditions-of-use">Conditions of use</a></li>
+          <li><a href="/about">About</a></li>
+        </ul>
+      </div>
     <div slot="copyright">
-    <a href="/droit-auteur">© Gouvernement du Québec,&nbsp;2024</a>
+    <a href="/copyright">© KOYdesigns&nbsp;2025</a>
     </div>
-  </qc-footer>
+  </sl-footer>
 
   
     <script type="module" src="./main.js"></script>

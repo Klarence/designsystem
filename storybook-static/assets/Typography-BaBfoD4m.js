@@ -1,0 +1,7 @@
+import{ae as t,af as i,am as m}from"./index-BZgQM0p8.js";import{useMDXComponents as n}from"./index-CFTnJw_j.js";import"./iframe-Day1-2IS.js";import"../sb-preview/runtime.js";import"./index-B0EJvtKl.js";import"./_commonjsHelpers-Cpj98o6Y.js";import"./index-D-8MO0q_.js";import"./index-BHYIh-Xd.js";import"./index-DrFu-skq.js";const e={type:{primary:"Roboto, sans-serif"},weight:{light:"300",regular:"400",bold:"700",extrabold:"800",black:"900"},size:{s1:12,s2:14,s3:16,m1:20,m2:24,m3:28,l1:32,l2:40,l3:48}},a="Lorem ipsum dolor sit amet, consectetur adipiscing elit.";function o(r){const s={p:"p",strong:"strong",...n(),...r.components};return t.jsxs(t.Fragment,{children:[t.jsx(i,{title:"Design Tokens/Typography"}),`
+`,`
+`,`
+`,t.jsx("h1",{class:"h1",children:"Typography"}),`
+`,t.jsxs(s.p,{children:[t.jsx(s.strong,{children:"Font:"})," Roboto"]}),`
+`,t.jsxs(s.p,{children:[t.jsx(s.strong,{children:"Weights:"})," 300(light), 400(regular), 700(bold), 800(extrabold), 900(black)"]}),`
+`,t.jsx(m,{fontSizes:[Number(e.size.s1),Number(e.size.s2),Number(e.size.s3),Number(e.size.m1),Number(e.size.m2),Number(e.size.m3),Number(e.size.l1),Number(e.size.l2),Number(e.size.l3)],fontWeight:e.weight.black,sampleText:a,fontFamily:e.type.primary})]})}function y(r={}){const{wrapper:s}={...n(),...r.components};return s?t.jsx(s,{...r,children:t.jsx(o,{...r})}):o(r)}export{a as SampleText,y as default,e as typography};

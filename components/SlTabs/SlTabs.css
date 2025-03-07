@@ -1,0 +1,16 @@
+sl-tabs {
+    display: flex;
+    cursor: pointer;
+}
+
+sl-tab {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-bottom: none;
+    background: #f1f1f1;
+
+    &.active {
+        background: #fff;
+        border-bottom: 1px solid #fff;
+    }
+}

@@ -1,0 +1,31 @@
+import { Meta, Markdown } from "@storybook/blocks";
+
+[//]: # (import '../src/styles/global.css';)
+
+<Meta title="Design Tokens/Shadow" />
+
+<style>
+    {`
+        .spacing-demo {
+            width: 100px;
+            background: var(--sl-color-primary-600);
+        }
+    `}
+</style>
+
+<h1 class="h1">Shadow</h1>
+
+Shadow (or Elevation) tokens are used to give elements the appearance of being raised off the page. Use them with the box-shadow property. These are especially useful for menus, popovers, and dialogs.
+<Markdown>
+    {`
+| Token                      | Value           | Example      |
+| -------------------------- | --------------- | ------------ |
+| --sl-shadow-x-small	     | 0.5rem (8px)    | <div class="shadow-demo" style="width: var(--sl-spacing-x-small); height: var(--sl-spacing-x-small)"></div> |
+| --sl-shadow-small	         | 0.75rem (12px)  | <div class="shadow-demo" style="width: var(--sl-spacing-small); height: var(--sl-spacing-small)"></div> |
+| --sl-shadow-medium	     | 1rem (16px)     | <div class="shadow-demo" style="width: var(--sl-spacing-medium); height: var(--sl-spacing-medium)"></div> |
+| --sl-shadow-large	         | 1.25rem (20px)  | <div class="shadow-demo" style="width: var(--sl-spacing-large); height: var(--sl-spacing-large)"></div> |
+| --sl-shadow-x-large	     | 1.75rem (28px)  | <div class="shadow-demo" style="width: var(--sl-spacing-x-large); height: var(--sl-spacing-x-large)"></div> |
+`}
+</Markdown>
+
+

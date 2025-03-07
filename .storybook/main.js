@@ -8,11 +8,12 @@ const config = {
   ],
 
   addons: [
+    "@chromatic-com/storybook",
     "@storybook/addon-links",
     "@storybook/addon-essentials",
-    "@chromatic-com/storybook",
     "@storybook/addon-interactions",
     "@storybook/addon-a11y",
+    'storybook-dark-mode'
   ],
 
   framework: {

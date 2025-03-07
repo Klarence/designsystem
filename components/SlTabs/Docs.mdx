@@ -1,0 +1,28 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as SearchStories from "./SlTabs.stories.js";
+
+<Meta of={SearchStories} />
+
+# SlTabs
+
+The `<sl-tabs>` component is a customizable search field, designed to be used in different parts of your application, such as the header or the main page.
+## Usage
+
+<Story of={SearchStories.Default} />
+
+```jsx
+
+<sl-tabs>
+  <sl-tab role="heading" slot="tab">Tab 1</sl-tab>
+  <sl-panel role="region" slot="panel">Content 1</sl-panel>
+  <sl-tab role="heading" slot="tab">Tab 2</sl-tab>
+  <sl-panel role="region" slot="panel">Content 2</sl-panel>
+  <sl-tab role="heading" slot="tab">Tab 3</sl-tab>
+  <sl-panel role="region" slot="panel">Content 3</sl-panel>
+</sl-tabs>
+
+````
+
+## Properties
+
+<Controls />

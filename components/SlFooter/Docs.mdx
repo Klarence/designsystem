@@ -1,0 +1,59 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as FooterStories from "./SlFooter.stories.js";
+
+<Meta of={FooterStories} />
+
+# Footer
+
+## Properties
+
+The component accepts two main attributes:
+
+ `site-name` : The name of the site to display in the footer. By default, it is set to “Government of Quebec”.
+ `site-url` : The URL of the site. By default, it is set to "https://koydesigns.net".
+
+## Slots
+
+The `<sl-footer>` component uses named slots to insert custom content. Here are the different slots available:
+
+#### `main-links`
+Used to insert the main links of the site. This slot is intended to contain main navigation elements.
+<Source code={`
+<div slot="main-links"
+  <nav>
+    <h3>Title Section</h3>
+    <ul>
+      <li><a href="#link1">Link 1</a></li>
+      <li><a href="#link2">Link 2</a></li>
+    </ul>
+  </nav>
+</div>
+`} />
+
+#### `secondary-links`
+Used to insert secondary links such as site policies and accessibility information.
+<Source code={`
+<div slot="secondary-links">
+    <ul>
+      <li><a href="#link1">Link 1</a></li>
+      <li><a href="#link2">Link 2</a></li>
+    </ul>
+</div>
+`} />
+
+#### `copyright`
+Used to insert copyright and other legal information.
+<Source code={`
+<div slot="copyright">
+    <ul>
+      <li><a href="#link1">Link 1</a></li>
+      <li><a href="#link2">Link 2</a></li>
+    </ul>
+</div>
+`} />
+
+## complete example
+
+
+<Primary />
+<Controls />

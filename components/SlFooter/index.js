@@ -1,0 +1,1 @@
+export { SlFooter } from './SlFooter.js'

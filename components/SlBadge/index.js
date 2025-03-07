@@ -1,0 +1,1 @@
+export { SlBadge } from './SlBadge.js';

@@ -1,0 +1,31 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as HeaderStories from "./SlHeader.stories";
+
+<Meta of={HeaderStories} />
+
+# SlHeader
+
+The `<sl-header>` component is a customizable header, designed to be used in different parts of your application, such as the top of the main page or specific sections.
+## Usage
+
+<Story of={HeaderStories.Default} />
+
+```jsx
+<sl-header
+  title="My site"
+  btnlabel="Search"
+  contacturl="/contact"
+  contactlabel="Contact Us"
+  search="yes"
+  langueurl="/en"
+  languagelabel="English"
+  action="/search"
+  name="search"
+  query=""
+>
+</sl-header>
+```
+
+## Properties
+
+<Controls />

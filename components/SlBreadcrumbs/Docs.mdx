@@ -1,0 +1,25 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as BreadcrumbStories from "./SlBreadcrumb.stories";
+
+<Meta of={BreadcrumbStories} />
+
+# Breadcrumb
+
+Breadcrumbs provide a group of links so users can easily navigate a website’s hierarchy.
+
+Breadcrumbs are usually placed before a page’s main content with the current page shown last to indicate the user’s position in the navigation.
+<Source code={`
+<sl-breadcrumb>
+  <sl-breadcrumb-item>
+    <sl-icon slot="prefix" name="house"></sl-icon>
+    Home
+  </sl-breadcrumb-item>
+  <sl-breadcrumb-item>Clothing</sl-breadcrumb-item>
+  <sl-breadcrumb-item>Shirts</sl-breadcrumb-item>
+</sl-breadcrumb>
+`} />
+
+## Example
+
+<Primary />
+<Controls />

@@ -1,0 +1,22 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as BadgeStories from "./SlBadge.stories.js";
+
+<Meta of={BadgeStories} />
+
+# Alert
+
+Alerts are used to display important messages inline or as toast notifications.
+
+<Source code={`
+    <sl-badge variant="primary">Primary</sl-badge>
+    <sl-badge variant="success">Success</sl-badge>
+    <sl-badge variant="neutral">Neutral</sl-badge>
+    <sl-badge variant="warning">Warning</sl-badge>
+    <sl-badge variant="danger">Danger</sl-badge>
+`} />
+
+## Example
+
+<Primary />
+<Controls />
+

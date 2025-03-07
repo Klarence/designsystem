@@ -1,37 +1,37 @@
 export default {
-  title: 'Modèles/Page',
+  title: 'Pages/Page',
   parameters: {
     layout: 'fullscreen',
   },
   render: () => {
     return `
-      <qc-header></qc-header>
-      <qc-navigation>
+      <sl-header></sl-header>
+      <sl-navigation>
         <ul>
           <li>
-            <a href="#">À propos</a>
+            <a href="#">About</a>
           </li>
           <li>
-            <a href="#">Contenu</a>
+            <a href="#">Content</a>
           </li>
           <li>
             <a href="#">Design</a>
           </li>
           <li>
-            <a href="#">Ressources</a>
+            <a href="#">Resources</a>
             <button>
               <span class="lnr lnr-chevron-down"></span>
             </button>
             <ul>
               <li><a href="#">Articles</a></li>
-              <li><a href="#">Vidéos</a></li>
+              <li><a href="#">Videos</a></li>
             </ul>
           </li>
         </ul>
         <div>
-          <qc-bouton type="session" label="Connexion"></qc-bouton>
+          <sl-button variant="primary">Connection</sl-button>
         </div>
-      </qc-navigation>
+      </sl-navigation>
       <main>
         <div class="container py-5">
           <div class="row">
@@ -39,11 +39,11 @@ export default {
            </div>
       </main>
 
-      <qc-footer 
-        site-url="https://www.quebec.ca"
-        site-nom="Gouvernement du Québec"
+      <sl-footer 
+        site-url=""
+        site-name="Design System"
       >
-        <div slot="liens-principaux">
+        <div slot="main-links">
           <nav>
             <h3>Section 1</h3>
             <ul>
@@ -65,27 +65,26 @@ export default {
               <li><a href="#link2">Link 2</a></li>
             </ul>
           </nav>
-          <qc-social
-            titre="Suivez-nous"
-            theme="dark"
-            medias='[{"icon":"/assets/icons/facebook-dark.svg","url":"https://facebook.com","text":"Facebook"},{"icon":"/assets/icons/twitterX-dark.svg","url":"https://twitter.com","text":"Twitter"},{"icon":"/assets/icons/youtube-dark.svg","url":"https://linkedin.com","text":"LinkedIn"}]'
-          >
-          </qc-social>
+<!--          <sl-social-->
+<!--            title="Follow Us"-->
+<!--            theme="dark"-->
+<!--            medias='[{"icon":"/assets/icons/facebook-dark.svg","url":"https://facebook.com","text":"Facebook"},{"icon":"/assets/icons/twitterX-dark.svg","url":"https://twitter.com","text":"Twitter"},{"icon":"/assets/icons/youtube-dark.svg","url":"https://linkedin.com","text":"LinkedIn"}]'-->
+<!--          >-->
+<!--          </sl-social>-->
         </div>
-        <div slot="liens-secondaires">
+        <div slot="secondary-links">
           <ul>
-            <li><a href="/accessibilite">Accessibilité</a></li>
-            <li><a href="/plan-du-site">Plan du site</a></li>
-            <li><a href="/acces-information">Accès à l'information</a></li>
-            <li><a href="/politique-confidentialite">Politique de confidentialité</a></li>
-            <li><a href="/conditions-utilisation">Conditions d'utilisation</a></li>
-            <li><a href="/a-propos">À propos</a></li>
+            <li><a href="/accessibility">Accessibility</a></li>
+            <li><a href="/sitemap">Sitemap</a></li>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="/conditions-of-use">Conditions of use</a></li>
+            <li><a href="/about">About</a></li>
           </ul>
         </div>
         <div slot="copyright">
-        <a href="/droit-auteur">© Gouvernement du Québec,&nbsp;2024</a>
+        <a href="/copyright">©&nbsp;2024</a>
         </div>
-      </qc-footer>
+      </sl-footer>
     `;
   },
 };
@@ -93,4 +92,4 @@ export default {
 export const Integration = {
 }
 
-Integration.storyName = 'Page complète';
+Integration.storyName = 'Page complete';

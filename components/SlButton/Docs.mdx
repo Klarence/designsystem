@@ -1,0 +1,22 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as ButtonStories from "./SlButton.stories.js";
+
+<Meta of={ButtonStories} />
+
+# Button
+
+Buttons represent actions that are available to the user.
+
+
+<Source code={`
+<sl-button variant="primary">
+  <sl-icon slot="prefix" name="gear"></sl-icon>
+  <sl-icon slot="suffix" name="info-circle"></sl-icon>
+  Button
+</sl-button>
+`} />
+
+## Example
+
+<Primary />
+<Controls />

@@ -1,0 +1,30 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as SearchStories from "./SlSearch.stories.js";
+
+<Meta of={SearchStories} />
+
+# SlSearch
+
+The `<sl-search>` component is a customizable search field, designed to be used in different parts of your application, such as the header or the main page.
+## Usage
+
+<Story of={SearchStories.Header} />
+
+```jsx
+
+<sl-search
+  placeholder="Search this site"
+  label="Search"
+  btnlabel="Search"
+  variant="dark" 
+  action="/search" 
+  name="search" 
+  value="" 
+>
+</sl-search>
+
+````
+
+## Properties
+
+<Controls />

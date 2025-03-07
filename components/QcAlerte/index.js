@@ -1,1 +1,0 @@
-export { QcAlerte } from './QcAlerte.js'

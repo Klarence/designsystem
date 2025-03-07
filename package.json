@@ -12,21 +12,24 @@
     "chromatic": "npx chromatic --project-token chpt_7a3b7618b1f5ee1"
   },
   "devDependencies": {
-    "@chromatic-com/storybook": "^3.1.0",
-    "@storybook/addon-essentials": "^8.3.6",
-    "@storybook/addon-interactions": "^8.3.6",
-    "@storybook/addon-links": "^8.3.6",
-    "@storybook/blocks": "^8.3.6",
-    "@storybook/html": "^8.3.6",
-    "@storybook/html-vite": "^8.3.6",
-    "@storybook/test": "^8.3.6",
-    "storybook": "^8.3.6",
+    "@chromatic-com/storybook": "^3.2.5",
+    "@storybook/addon-essentials": "^8.6.4",
+    "@storybook/addon-interactions": "^8.6.4",
+    "@storybook/addon-links": "^8.6.4",
+    "@storybook/blocks": "^8.6.4",
+    "@storybook/html": "^8.6.4",
+    "@storybook/html-vite": "^8.6.4",
+    "@storybook/test": "^8.6.4",
+    "storybook": "^8.6.4",
     "storybook-addon-pseudo-states": "^4.0.2",
-    "vite": "^5.4.10",
-    "vite-plugin-mkcert": "^1.17.5"
+    "storybook-dark-mode": "^4.0.2",
+    "vite": "^6.0.7",
+    "vite-plugin-mkcert": "^1.17.6"
   },
   "dependencies": {
-    "@storybook/addon-a11y": "^8.3.6",
+    "@shoelace-style/shoelace": "^2.19.1",
+    "@storybook/addon-a11y": "^8.6.4",
+    "@storybook/theming": "^8.6.4",
     "bootstrap": "^5.3.3"
   }
 }

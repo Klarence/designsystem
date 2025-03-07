@@ -1,1 +1,0 @@
-export { QcUp } from './QcUp.js';

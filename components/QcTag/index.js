@@ -1,1 +1,0 @@
-export { QcTag } from './QcTag.js'

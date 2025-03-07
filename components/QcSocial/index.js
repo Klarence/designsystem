@@ -1,1 +1,0 @@
-export { QcSocial } from "./QcSocial.js";

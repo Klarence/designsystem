@@ -1,1 +1,0 @@
-export { QcAccordeon } from './QcAccordeon.js';

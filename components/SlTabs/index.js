@@ -1,0 +1,1 @@
+export { SlTabs } from './SlTabs.js';

@@ -1,1 +1,0 @@
-export { QcRecherche } from './QcRecherche.js';

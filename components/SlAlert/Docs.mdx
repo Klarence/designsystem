@@ -1,0 +1,22 @@
+import { Meta, Primary, Controls, Story, Source, Title } from "@storybook/blocks";
+import * as AlertStories from "./SlAlert.stories";
+
+<Meta of={AlertStories} />
+
+# Alert
+
+Alerts are used to display important messages inline or as toast notifications.
+
+<Source code={
+    `<sl-alert variant="primary" open>
+  <sl-icon slot="icon" name="info-circle"></sl-icon>
+  <strong>This is super informative</strong><br />
+  You can tell by how pretty the alert is.
+</sl-alert>`
+} />
+
+## Example
+
+<Primary />
+<Controls />
+
