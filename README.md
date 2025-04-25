@@ -68,4 +68,15 @@ I will go with the [licence MIT](https://opensource.org/license/MIT).
 
 I was having a hard time figuring out how to set up a Vanilla JS Storybook with Vite, so I leveraged  https://github.com/bourpie/designsystem, Thank you, [@bourpie](https://github.com/bourpie)!
 
-Also, a big THANK YOU to [Shoelace](https://github.com/shoelace-style/shoelace) and [Google's howto-components](https://github.com/GoogleChromeLabs/howto-components/) for the components. And [Bootstrap](https://icons.getbootstrap.com/) for the icons.
+Also, a big THANK YOU to existing vanilla JS Web Component Libraries that I leverage(/plan to).
+https://icons.getbootstrap.com/
+https://github.com/shoelace-style/shoelace
+https://github.com/GoogleChromeLabs/howto-components/
+
+
+References:
+https://material-web.dev/about/intro/
+https://getuikit.com/
+https://franken-ui.dev/
+https://picocss.com/
+https://bulma.io/

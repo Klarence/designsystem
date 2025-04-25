@@ -26,8 +26,7 @@ sl-footer  {
     }
 
     a {
-      color: var(--link-color-dark);
-      color: white;
+      color: var(--link-color-dark, white);
       font-size: 0.875rem;
       text-decoration: none;
     }

@@ -32,12 +32,11 @@ function generateSlSearch(args) {
 <!--</style>-->
 
 <sl-tabs>
-  
   ${args.tab1 ? `<sl-tab role="heading" slot="tab">${args.tab1}</sl-tab>` : ''}
-  ${args.content1 ? `<sl-panel role="region" slot="panel">${args.content1}</sl-panel>` : ''}
    ${args.tab2 ? `<sl-tab role="heading" slot="tab">${args.tab2}</sl-tab>` : ''}
-  ${args.content2 ? `<sl-panel role="region" slot="panel">${args.content2}</sl-panel>` : ''}
    ${args.tab3 ? `<sl-tab role="heading" slot="tab">${args.tab3}</sl-tab>` : ''}
+  ${args.content1 ? `<sl-panel role="region" slot="panel">${args.content1}</sl-panel>` : ''}
+  ${args.content2 ? `<sl-panel role="region" slot="panel">${args.content2}</sl-panel>` : ''}
   ${args.content3 ? `<sl-panel role="region" slot="panel">${args.content3}</sl-panel>` : ''}
 </sl-tabs>
     `;  

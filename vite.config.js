@@ -10,13 +10,14 @@ export default defineConfig({
     minify: true,
     lib: {
       name: 'SlComponents',
-      entry: resolve(__dirname, 'main.js'),
+      entry: resolve(__dirname, 'build/custom-components.js'),
       fileName: 'sl-components',
       formats: ['es','iife'],
     },
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'example.html'),
+        tabs: resolve(__dirname, 'build/tabs.js'),
       }
     }
   }

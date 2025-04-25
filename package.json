@@ -3,6 +3,9 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "main.js",
+  "module": "main.js",
+  "customElements": "custom-elements.json",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -13,6 +16,7 @@
   },
   "devDependencies": {
     "@chromatic-com/storybook": "^3.2.5",
+    "@custom-elements-manifest/analyzer": "^0.10.4",
     "@storybook/addon-essentials": "^8.6.4",
     "@storybook/addon-interactions": "^8.6.4",
     "@storybook/addon-links": "^8.6.4",
@@ -29,7 +33,6 @@
   "dependencies": {
     "@shoelace-style/shoelace": "^2.19.1",
     "@storybook/addon-a11y": "^8.6.4",
-    "@storybook/theming": "^8.6.4",
-    "bootstrap": "^5.3.3"
+    "@storybook/theming": "^8.6.4"
   }
 }

@@ -1,16 +1,19 @@
-sl-tabs {
+:host {
     display: flex;
-    cursor: pointer;
+    flex-wrap: wrap;
 }
+/*::slotted(sl-tab) {*/
+/*    cursor: pointer;*/
+/*    padding: 10px;*/
+/*    border: 1px solid #ccc;*/
+/*    border-bottom: none;*/
+/*    background: #f1f1f1;*/
 
-sl-tab {
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-bottom: none;
-    background: #f1f1f1;
-
-    &.active {
-        background: #fff;
-        border-bottom: 1px solid #fff;
-    }
-}
+/*    &.active {*/
+/*        background: #fff;*/
+/*        border-bottom: 1px solid #fff;*/
+/*    }*/
+/*}*/
+/*::slotted(sl-panel) {*/
+/*    flex-basis: 100%;*/
+/*}*/

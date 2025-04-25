@@ -1,6 +1,17 @@
 import './SlTabPanel.js';
 import './SlTab.js';
-import './SlTabs.css';
+// import './SlTabs.css';
+import stylesheet from '.   /Tabs.css' with { type: 'css' };
+
+import {KEYCODE} from "../../helpers/keycode.js";
+// import styleText from './SlTabs.css' with { type: 'css' };
+//
+const sheet = new CSSStyleSheet();
+sheet.replaceSync(stylesheet);
+// sheet.replace("@import('./SlTabs.css');");
+
+
+
 // import './SlTabs.css';
 //
 // class SlTabs extends HTMLElement {
@@ -46,31 +57,17 @@ import './SlTabs.css';
 //
 // export { SlTabs };
 
-const KEYCODE = {
-    HOME: 36,
-    END: 35,
-    UP: 38,
-    RIGHT: 39,
-    DOWN: 40,
-    LEFT: 37,
-};
-
 // To avoid invoking the parser with `.innerHTML` for every new instance, a
 // template for the contents of the shadow DOM is shared by all
-// `<howto-tabs>` instances.
+// `<sl-tabs>` instances.
 const template = document.createElement('template');
 template.innerHTML = `
-    <style>
-      :host {
-        display: flex;
-        flex-wrap: wrap;
-      }
-      ::slotted(sl-panel) {
-        flex-basis: 100%;
-      }
-    </style>
-    <slot name="tab"></slot>
-    <slot name="panel"></slot>
+    <div role="tablist">
+        <slot name="tab" part="tab"></slot>
+    </div>
+    <div part="panel">
+        <slot name="panel"></slot>
+    </div>
   `;
 
 
@@ -82,16 +79,12 @@ export class SlTabs extends HTMLElement {
         // if they need access to `this`.
         this._onSlotChange = this._onSlotChange.bind(this);
 
-        // For progressive enhancement, the markup should alternate between tabs
-        // and panels. Elements that reorder their children tend to not work well
-        // with frameworks. Instead, shadow DOM is used to reorder the elements by
-        // using slots.
-        this.attachShadow({mode: 'open'});
-        // Import the shared template to create the slots for tabs and panels.
-        this.shadowRoot.appendChild(template.content.cloneNode(true));
+        const shadowRoot = this.attachShadow({mode: 'closed'});
+        shadowRoot.appendChild(template.content.cloneNode(true));
+        shadowRoot.adoptedStyleSheets = [sheet];
 
-        this._tabSlot = this.shadowRoot.querySelector('slot[name=tab]');
-        this._panelSlot = this.shadowRoot.querySelector('slot[name=panel]');
+        this._tabSlot = shadowRoot.querySelector('slot[name=tab]');
+        this._panelSlot = shadowRoot.querySelector('slot[name=panel]');
 
         // This element needs to react to new children as it links up tabs and
         // panel semantically using `aria-labelledby` and `aria-controls`.
@@ -112,8 +105,6 @@ export class SlTabs extends HTMLElement {
         this.addEventListener('keydown', this._onKeyDown);
         this.addEventListener('click', this._onClick);
 
-        if (!this.hasAttribute('role'))
-            this.setAttribute('role', 'tablist');
 
         // Up until recently, `slotchange` events did not fire when an element was
         // upgraded by the parser. For this reason, the element invokes the
