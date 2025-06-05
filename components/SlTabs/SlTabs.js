@@ -1,7 +1,7 @@
 import './SlTabPanel.js';
 import './SlTab.js';
 // import './SlTabs.css';
-import stylesheet from '.   /Tabs.css' with { type: 'css' };
+import stylesheet from './SlTabs.css?inline' with { type: 'css' };
 
 import {KEYCODE} from "../../helpers/keycode.js";
 // import styleText from './SlTabs.css' with { type: 'css' };

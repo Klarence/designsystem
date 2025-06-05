@@ -1,5 +1,5 @@
 import '../styles/globals.css';
-import { themes } from '@storybook/theming';
+import { themes } from 'storybook/theming';
 
 export const parameters = {
     darkMode: {
@@ -10,7 +10,7 @@ export const parameters = {
     }
 };
 
-/** @type { import('@storybook/html').Preview } */
+/** @type { import('@storybook/html-vite').Preview } */
 const preview = {
     parameters: {
         options: {

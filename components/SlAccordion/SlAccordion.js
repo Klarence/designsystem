@@ -1,5 +1,6 @@
 import {KEYCODE} from "../../helpers/keycode.js";
-import styleText from './SlAccordion.css';
+// import './SlAccordion.css'
+import styleText from './SlAccordion.css?inline';
 
 const sheet = new CSSStyleSheet();
 sheet.replaceSync(styleText);

@@ -17,7 +17,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'example.html'),
-        tabs: resolve(__dirname, 'build/tabs.js'),
+        tabs: resolve(__dirname, 'components/SlTabs/SlTabs.js'),
       }
     }
   }
