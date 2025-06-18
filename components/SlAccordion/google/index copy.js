@@ -1,0 +1,1 @@
+export { SlAccordion } from './SlAccordion.js';

@@ -1,0 +1,11 @@
+/* Elevation, aka, z-index or layers */
+
+@media screen {
+  :root {
+    --elevation-level-0: 0 0 0 0;
+    --elevation-level-1: 0 1px 4px 0;
+    --elevation-level-2: 0 2px 8px 0;
+    --elevation-level-3: 0 4px 16px 0;
+    --elevation-level-4: 0 6px 24px 0;
+  }
+}

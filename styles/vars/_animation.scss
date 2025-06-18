@@ -1,0 +1,40 @@
+@media screen {
+  :root {
+    --opacity-disabled: 0.5;
+    --opacity-loading: 0.7;
+    --opacity-shadow: 0.2;
+
+    --duration-appear-emphasize-fast: 500ms;
+    --duration-appear-emphasize-moderate: 700ms;
+    --duration-appear-emphasize-slow: 800ms;
+    --duration-appear-fast: 250ms;
+    --duration-appear-moderate: 300ms;
+    --duration-appear-slow: 350ms;
+    --duration-disappear-emphasize-fast: 500ms;
+    --duration-disappear-emphasize-moderate: 700ms;
+    --duration-disappear-emphasize-slow: 800ms;
+    --duration-disappear-fast: 200ms;
+    --duration-disappear-moderate: 250ms;
+    --duration-disappear-slow: 300ms;
+    --duration-fade-fast: 150ms;
+    --duration-fade-moderate: 200ms;
+    --duration-fade-slow: 250ms;
+    --duration-progress-fast: 500ms;
+    --duration-progress-moderate: 1000ms;
+    --duration-progress-slow: 1500ms;
+    --duration-progress-slowest: 2000ms;
+    --duration-transform-emphasize-fast: 500ms;
+    --duration-transform-emphasize-moderate: 700ms;
+    --duration-transform-emphasize-slow: 800ms;
+    --duration-transform-fast: 350ms;
+    --duration-transform-moderate: 400ms;
+    --duration-transform-slow: 450ms;
+    --ease-appear: cubic-bezier(0, 0, 0.25, 1);
+    --ease-appear-emphasize: cubic-bezier(0.15, 1.4, 0.25, 1);
+    --ease-disappear: cubic-bezier(0.35, 0, 1, 1);
+    --ease-disappear-emphasize: cubic-bezier(0.4, 0, 0.6, -0.4);
+    --ease-fade: cubic-bezier(0.35, 0, 0.5, 1);
+    --ease-transform: cubic-bezier(0.35, 0, 0.25, 1);
+    --ease-transform-emphasize: cubic-bezier(0.35, 1.4, 0.25, 1);
+  }
+}

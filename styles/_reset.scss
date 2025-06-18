@@ -1,0 +1,132 @@
+@use "./vars/variables";
+@use "./vars/variables-dark";
+//@use "../vendor/_normalize.min.scss";
+
+[hidden],
+.hidden {
+  display: none;
+}
+h1 {
+  font-size: 2.4rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1.17em;
+}
+
+h1,
+.heading {
+  font-family: var(--font-family-headings);
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.heading {
+  margin: 0;
+  font-weight: bold;
+  padding-top: 1rem;
+  text-wrap: pretty;
+}
+
+@layer base {
+  *,
+  *:before,
+  *:after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    font-family: var(--font-family);
+    color: var(--bodyTextColor);
+    overflow-x: hidden;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .heading {
+    margin: 0;
+    color: var(--headerColor);
+    font-weight: bold;
+    padding-top: 1rem;
+  }
+
+  a {
+    color: var(--color-link);
+  }
+
+  a:hover,
+  button:hover {
+    cursor: pointer;
+  }
+
+  p,
+  li,
+  a {
+    font-size: 1rem;
+    line-height: 1.75em;
+    margin: 0;
+  }
+
+  p,
+  li {
+    max-width: 68ch;
+    color: #333;
+    color: var(--primaryDark);
+  }
+
+  p + p {
+    margin-top: 1rem;
+  }
+
+  body {
+    transition: background-color 0.3s;
+  }
+
+  .container {
+    position: relative;
+    width: 92%;
+    margin: auto;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .visible,
+  .invisible {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  .visible {
+    opacity: 1;
+  }
+
+  .text-on-image {
+    color: #fff;
+    text-shadow: 0 0 1px #666;
+  }
+}

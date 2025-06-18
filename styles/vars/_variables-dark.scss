@@ -1,0 +1,58 @@
+//@use "./variables";
+
+/* Variables aka custom properties */
+/*
+LEVELS
+Values
+Primitives
+Semantic
+Component
+*/
+
+/* Taxonomy & naming convention
+Generic → Specific - Taxonomical categories are ordered from generic to specific.
+[type] [element] [attribute] [purpose] [prominence] [size] [speed] [state] [index]
+color     input                   info     primary      sm            error
+radius    action                positive secondary      md
+elevation data                  neutral  tertiary       lg
+ease      container             negative accent
+                                 warning  inverse */
+
+/*
+https://medium.com/eightshapes-llc/naming-tokens-in-design-systems-9e86c7444676
+Namespace           Object                  Base                Modifier
+
+SYSTEM              GROUP                   CATEGORY            STATE
+THEME               COMPONENT               CONCEPT             SCALE
+DOMAIN              ELEMENT                 PROPERTY            MODE
+                                                                VARIANT
+                                  */
+
+//@media (prefers-color-scheme: dark) {
+html[data-theme="dark"] {
+  --color-brand: var(--color-green-500);
+  --color-brand-secondary: var(--color-green-800);
+
+  --color-dark: var(--color-neutral-50);
+  --color-medium: var(--color-neutral-400);
+  --color-light: var(--color-neutral-900);
+  --color-black: #fff;
+  --color-white: #000;
+
+  --color-active: var(--color-brand);
+  --color-complete: var(--color-brand);
+  --color-disabled: var(--color-medium);
+  --color-failure: var(--color-rose-700);
+  --color-success: var(--color-green-700);
+
+  //--color-link: var(--color-brand-secondary);
+
+  //--headerColor: var(--color-brand);
+  --headerColor: var(--color-green-700);
+  --primaryDark: rgba(209, 213, 219, 1);
+
+  --color-background-system-default: oklch(24% 1% 54deg);
+  --color-background-card: #374153;
+}
+
+//}

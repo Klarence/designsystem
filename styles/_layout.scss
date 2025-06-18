@@ -1,0 +1,238 @@
+.visually-hidden:not(:focus):not(:active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+// https://www.a11y-collective.com/blog/skip-to-main-content/
+.skip-to-main-link {
+  position: absolute;
+  left: -9999px;
+  z-index: 999999;
+  padding: 1em;
+  font-weight: bold;
+  background-color: var(--primaryDark);
+  color: var(--color-white);
+  opacity: 0;
+
+  &:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    opacity: 1;
+  }
+}
+
+body {
+  //background-color: #f4f4f4;
+  background-color: var(--color-background-system-default);
+}
+
+.holy-grail {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: space-between;
+  margin-top: 64px;
+  //height: 100vh; // bug with scroll
+
+  main {
+    width: 100vw;
+    max-width: 1024px;
+    margin: 0 auto 2rem;
+    padding: 1rem;
+  }
+
+  #main-footer {
+    width: 100vw;
+  }
+}
+
+@media (min-width: 1100px) {
+  .holy-grail {
+    main {
+      padding: 1rem 0;
+    }
+
+    .full-bleed-content {
+      width: 100%;
+      max-width: 1024px;
+      margin: 0 auto;
+    }
+  }
+}
+
+body {
+  line-height: 1.6;
+  margin: 0;
+  color: #111;
+}
+
+//header, section, footer {
+article {
+  //padding: 4rem 2rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.hero-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  margin-top: 2rem;
+}
+
+.section-title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  margin-top: 3rem;
+}
+
+ul {
+  list-style: none;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+.card {
+  background-color: var(--color-background-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  padding: 1.5rem;
+
+  h3 {
+    margin-top: 0;
+    font-size: 1.2rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    //margin-bottom: 1rem;
+  }
+}
+
+.card-photo {
+  background-color: var(--color-background-card);
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+
+  h3 {
+    padding: 0.5rem 1.5rem 0;
+  }
+
+  p {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+    //border-radius: 8px;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+  }
+}
+
+section.cta {
+  text-align: center;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
+  //background-color: #eef2f5;
+  //background-color: var(--color-light);
+
+  img {
+    width: 100%;
+    max-height: 320px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-top: 1.5rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  a:hover {
+    background-color: #333;
+  }
+}
+
+.cta a,
+.cta-link {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.75rem 1.5rem;
+  background-color: var(--color-brand);
+  color: var(--color-white);
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background-color 0.3s ease;
+}
+
+.no-wrap {
+  white-space: nowrap;
+}
+
+@media only screen and (min-width: 64em) {
+  .holy-grail {
+    margin-top: 120px;
+  }
+}
+
+.card {
+  .icon-circle {
+    background-color: rgba(48, 182, 0, 0.1);
+
+    display: flex;
+    //margin-bottom: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9999px;
+    width: 4rem;
+    height: 4rem;
+
+    svg,
+    img {
+      width: 1.5rem;
+      color: var(--color-brand);
+      filter: brightness(0) saturate(100%) invert(38%) sepia(48%) saturate(539%)
+        hue-rotate(56deg) brightness(93%) contrast(87%);
+      border-radius: 0;
+    }
+  }
+}
+
+.dark-mode {
+  .card {
+    .icon-circle {
+      background-color: rgba(255, 255, 255, 0.1);
+
+      svg,
+      img {
+        color: var(--color-brand-secondary);
+        filter: brightness(0) saturate(100%) invert(63%) sepia(93%)
+          saturate(334%) hue-rotate(106deg) brightness(94%) contrast(86%);
+      }
+    }
+  }
+}
